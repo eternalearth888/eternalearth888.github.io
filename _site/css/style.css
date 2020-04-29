@@ -1,0 +1,301 @@
+import hljs from 'highlight.js/lib/highlight';
+import 'highlight.js/styles/github.css';
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: url(../images/bg.jpg) repeat-y center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	  background-size: cover;
+	  background-color: rgba(255, 255, 255, 0.7);
+	color: #31384D;
+	font-size: 15px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+footer {
+	text-align: right;
+	vertical-align: middle;
+	padding: 1em;
+	background-color: rgb(49,56,77, .75);
+	color: #F5579E;
+}
+
+/**HEADERS & CONTENT**/
+h1 {
+	font-weight: bold;
+	font-size: 50px;
+	vertical-align: middle;
+	text-indent: 1em;
+}
+
+h2 {
+	text-align: right;
+	font-size: 1em;
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: bold;
+	border-style: none none double none;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 10px;
+	vertical-align: middle;
+	text-indent: .5em;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 40px;
+	vertical-align: middle;
+	text-indent: 1em;
+	margin:0;
+	padding: 0;
+}
+
+/**SECTIONS**/
+.top {
+	color: #F5579E;
+	background-color: #31384D;
+	padding: .1em;
+}
+
+.top_right {
+	text-align: right;
+	margin-right: 1em;
+	font-style: italic;
+	vertical-align: middle;
+}
+
+.top_left {
+	text-align: left;
+}
+
+
+header {
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
+nav {
+	width: 100%;
+}
+
+article {
+	padding: 1em;
+	background-color: rgb(244,203,236, .75);
+	height: 100%;
+	height: auto !important;
+	/* For IE8 and earlier */
+}
+
+section {
+	min-width: 800px;
+	width: 60%;
+	height: 100%;
+	height: auto !important;
+	margin: auto;
+	padding-bottom: auto;
+}
+
+#avatar {
+	float: center;
+	margin: auto;
+	width: 150px;
+	display: block;
+	margin: auto;
+	border-radius: 1em;
+	border: 5px solid #31384D;
+}
+
+#cat {
+	float: center;
+	width: 256px;
+	height: 256px;
+	display: block;
+	margin: auto;
+	border-radius: 1em;
+	border: 5px solid #31384D;
+}
+
+
+p {
+	vertical-align: top;
+	text-align: justify;
+	text-indent: 1em;
+}
+
+/**NAV UL**/
+nav ul{
+	height: auto;
+	list-style-type: none;
+}
+
+nav li{
+	margin-left: .3em;
+	margin-right: .3em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+nav img {
+	width: 36px;
+	height: 36px;
+}
+
+/**TABLE STUFF**/
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+
+thead {
+	background-color: #31384D;
+	color: #F4CBEC;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+
+td {
+	vertical-align: top;
+	padding: .5em;
+}
+
+.main {
+	padding: 1.5em;
+}
+
+.sub {
+	background-color: #F4CBEC;
+}
+
+.sub2 {
+	background-color: #F7E4F3;
+}
+
+.project {
+	padding: 1.5em;
+}
+
+.project img {
+	width: 256px;
+	height: 256px;
+	display: block;
+	margin: auto;
+	border-radius: 1em;
+	border: 5px solid #31384D;
+}
+
+.table-content {
+	background-color: #D3BBBE;
+}
+
+.right {
+	text-align: right;
+	margin-right: 1em;
+	font-style: italic;
+	vertical-align: middle;
+	background-color: #D3BBBE;
+	color: #22444c;
+}
+
+.left {
+	text-align: left;
+	background-color: #D3BBBE;
+}
+
+.center {
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+ul {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: .4em;
+	margin-bottom: .4em;
+}
+
+.nav-right {
+	margin-left: 18em;
+}
+
+
+/**NAV LINKS**/
+nav a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #F4CBEC;
+}
+
+nav a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #F4CBEC;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	font-weight: bold;
+	color: #F4CBEC;
+}
+
+nav a:link img,
+a:visited img {
+	opacity: 0.8;
+	filter: alpha(opacity=40);
+	/* For IE8 and earlier */
+}
+
+nav a:hover img,
+nav a:focus img,
+nav a:active img {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	/* For IE8 and earlier */
+}
+
+/**LINKS**/
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #F5579E;
+}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #F5579E;
+}
+
+a:hover, a:focus, a:active { 
+	font-weight: bold;
+	color: #F5579E;
+}
+
+a:link img, a:visited img {
+    opacity: 0.8;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+a:hover img, a:focus img, a:active img {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
